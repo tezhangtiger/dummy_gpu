@@ -1,4 +1,6 @@
 library(MicrosoftML)
+r=10000
+c=10000
 normData <- data.frame(matrix(rnorm(r*c,0,1),r,c))
 label = sample(c(0, 1), r, replace = T)
 normData=cbind(normData, label=as.factor(label))
